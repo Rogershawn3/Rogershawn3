@@ -1,0 +1,59 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Jolene Book List");
+
+        List<String> b1 = new ArrayList<String>();
+        List<String> a1 = new ArrayList<String>();
+        List<Integer> d1 = new ArrayList<Integer>();
+
+        while (true) {
+            for (int i = 0; i < 3; i++) {
+                Scanner input = new Scanner(System.in);
+                Scanner yyob = new Scanner(System.in);
+                System.out.println("Do you want to add another Book?");
+                String go = input.nextLine();
+                if (Objects.equals(go, "No"))
+                    break;
+                if (Objects.equals(go, "Yes"))
+                    System.out.println("Enter Name of book:");
+                String nob = input.nextLine();
+                b1.add(nob);
+
+                System.out.println("Enter Name of Author:");
+                String noa = input.nextLine();
+                a1.add(noa);
+
+                System.out.print("Enter year of book:");
+                int yob = yyob.nextInt();
+                d1.add(yob);
+                System.out.println(b1 + " writing by " + a1 + " in " + d1);
+
+
+        }
+
+            }
+
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
